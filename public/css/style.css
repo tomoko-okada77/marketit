@@ -1,0 +1,156 @@
+button:focus {
+  outline: 0 !important;
+}
+
+.img-square {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.img-square .price {
+  bottom: 12px;
+  left: 0;
+  padding: 4px 12px;
+  border-radius: 0 8px 8px 0;
+  background: rgb(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.sold {
+  position: absolute;
+  left: -40px;
+  top: -7px;
+  padding: 20px 40px 5px 40px;
+  color: #fff;
+  font-weight: bold;
+  transform: rotate(-45deg);
+}
+
+.sold-sm {
+  padding: 20px 40px 5px 40px;
+  left: -40px;
+  top: -10px;
+  font-size: 10px;
+}
+
+.sold-lg {
+  left: -52px;
+  top: -18px;
+  padding: 40px 45px 5px 45px;
+  font-size: 24px;
+}
+
+.pre-line {
+  white-space: pre-line;
+}
+
+.avatar {
+  border-radius: 50%;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-sm {
+  width: 24px;
+  height: 24px;
+}
+
+.avatar-md {
+  width: 36px;
+  height: 36px;
+}
+
+.avatar-lg {
+  width: 80px;
+  height: 80px;
+}
+
+.avatar-xl {
+  width: 120px;
+  height: 120px;
+}
+
+.avatar-lg i {
+  font-size: 32px;
+}
+.avatar-xl i {
+  font-size: 40px;
+}
+
+.btn-rounded {
+  border-radius: 24px !important;
+}
+
+.badge {
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -9px;
+  right: -4px;
+}
+
+.unread-badge {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  right: 2px;
+  top: -16px;
+}
+
+@media (max-width: 767.98px) {
+  .navbar {
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; */
+  }
+  /* .navbar .container {
+    position: absolute;
+  } */
+  .navbar-nav {
+    /* border-bottom: 1px solid #000; */
+    /* flex-direction: row !important; */
+  }
+  .nav-item {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    display: block;
+  }
+  .nav-item:first-child {
+    /* border-top: 1px solid #eee; */
+  }
+  .sold {
+    padding: 20px 40px 5px 40px;
+    left: -40px;
+    top: -10px;
+    font-size: 10px;
+  }
+
+  .sold-sm {
+    padding: 12px 35px 0px 35px;
+    left: -38px;
+    top: -5px;
+    font-size: 10px;
+  }
+
+  .sold-lg {
+    left: -52px;
+    top: -18px;
+    padding: 40px 45px 5px 45px;
+    font-size: 16px;
+  }
+
+  .badge {
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+  }
+}
