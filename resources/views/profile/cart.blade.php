@@ -3,6 +3,8 @@
 @section('title', 'cart')
 
 @section('content')
+  @include('components.btn-back')
+
   <div class="col-md-9 col-sm-12 mx-auto">
     <h2 class="mb-4 text-center">Cart</h2>
     <ul class="list-unstyled border-top">

@@ -3,6 +3,8 @@
 @section('title', 'favorite')
 
 @section('content')
+  @include('components.btn-back')
+
   <div class="row flex-row-reverse justify-content-between">
     <div class="col-md-7 col-sm-12">
       <h2 class="mb-4 text-center">Favorites</h2>

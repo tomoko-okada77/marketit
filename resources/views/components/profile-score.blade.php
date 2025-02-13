@@ -7,5 +7,5 @@
     <i class="fa-solid fa-star text-secondary"></i>
   @endfor
   
-  <span class="ms-1">{{ $user->reviews->count() }}</span>
+  <span class="ms-1">{{ $user->reviews->count() }} Reviews</span>
 </a>

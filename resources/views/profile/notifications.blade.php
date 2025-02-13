@@ -3,6 +3,8 @@
 @section('title', 'notifications')
 
 @section('content')
+  @include('components.btn-back')
+
   <div class="col-md-9 col-sm-12 mx-auto">
     <h2 class="mb-4 text-center">Notifications</h2>
     @if (Auth::user()->unreadNotifications->count() > 0)

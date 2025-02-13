@@ -3,6 +3,8 @@
 @section('title', 'Following')
 
 @section('content')
+  @include('components.btn-back')
+
   <div class="row  flex-row-reverse">
     <div class="col-md-7 col-sm-12">
       <h2 class="mb-3 text-center">Following</h2>

@@ -1,3 +1,8 @@
+
+.container {
+  position: relative;
+}
+
 button:focus {
   outline: 0 !important;
 }
@@ -102,6 +107,10 @@ button:focus {
   position: absolute;
   right: 2px;
   top: -16px;
+}
+
+.btn-back {
+  top: -40px;
 }
 
 @media (max-width: 767.98px) {

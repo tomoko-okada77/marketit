@@ -3,6 +3,8 @@
 @section('title', 'reviews')
 
 @section('content')
+  @include('components.btn-back')
+
   <div class="col-md-7 col-sm-12 mx-auto">
     <h2 class="mb-4 text-center">Reviews</h2>
     @foreach ($user->reviews as $review)

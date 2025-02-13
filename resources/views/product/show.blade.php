@@ -3,6 +3,7 @@
 @section('title', $product->name)
 
 @section('content')
+@include('components.btn-back')
 <div class="row gx-md-5">
   <div class="col-md-6 col-sm-12">
     <div class="position-relative overflow-hidden">
