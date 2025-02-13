@@ -21,8 +21,8 @@
       @if ($user->id == Auth::user()->id && $suggested_users)
         <h2 class="mt-5 mb-3 text-center">Suggested Users</h2>
         <ul class="list-unstyled mx-auto col-10 border-top">
-          @foreach ($suggested_users as $user)
-            @include('components.user-list')
+          @foreach ($suggested_users as $suggested_user)
+            @include('components.user-list', ['user' => $suggested_user])
           @endforeach
         </ul>
       @endif

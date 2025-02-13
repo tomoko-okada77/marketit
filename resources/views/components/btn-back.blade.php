@@ -1,5 +1,7 @@
-<div class="mb-2 position-absolute btn-back">
-  <a href="{{ url()->previous() }}" class="text-dark text-decoration-none">
-    <i class="fa-solid fa-chevron-left pe-1"></i>Back
-  </a>
-</div>
+@if (url()->previous())
+  <div class="mb-2 position-absolute btn-back">
+    <a href="{{ url()->previous() }}" class="text-dark text-decoration-none">
+      <i class="fa-solid fa-chevron-left pe-1"></i>Back
+    </a>
+  </div>
+@endif
