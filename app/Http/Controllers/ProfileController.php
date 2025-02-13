@@ -101,13 +101,6 @@ class ProfileController extends Controller
                 ->with('user', $user);
     }
 
-    // public function notifications($id) {
-    //     $user = $this->user->findOrfail($id);
-
-    //     return view('profile.notifications')
-    //             ->with('user', $user);
-    // }
-
     public function reviews($id) {
         $user = $this->user->findOrfail($id);
 

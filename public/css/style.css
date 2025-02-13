@@ -114,27 +114,10 @@ button:focus {
 }
 
 @media (max-width: 767.98px) {
-  .navbar {
-    /* position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh; */
-  }
-  /* .navbar .container {
-    position: absolute;
-  } */
-  .navbar-nav {
-    /* border-bottom: 1px solid #000; */
-    /* flex-direction: row !important; */
-  }
   .nav-item {
     width: 100%;
     border-bottom: 1px solid #eee;
     display: block;
-  }
-  .nav-item:first-child {
-    /* border-top: 1px solid #eee; */
   }
   .sold {
     padding: 20px 40px 5px 40px;

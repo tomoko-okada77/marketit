@@ -21,15 +21,6 @@
             <i class="fa-solid fa-heart text-danger me-1 fs-4"></i>
           </button>
         </form>
-        {{-- <form action="{{ route('like.destroy', $product->id) }}" method="post" class="d-inline">
-          @csrf
-          @method('DELETE')
-          <button type="submit" class="btn p-0 fs-4" data-bs-toggle="tooltip" data-bs-placement="top"
-          data-bs-custom-class="custom-tooltip"
-          data-bs-title="Unfavorite">
-            <i class="fa-solid fa-heart text-danger me-1 fs-4"></i>
-          </button>
-        </form> --}}
       @else
         <form action="{{ route('like.store', $product->id) }}" method="post" class="d-inline">
           @csrf
@@ -37,14 +28,6 @@
             <i class="fa-regular fa-heart text-secondary me-1 fs-4"></i>
           </button>
         </form>
-        {{-- <form action="{{ route('like.store', $product->id) }}" method="post" class="d-inline">
-          @csrf
-          <button type="submit" class="btn p-0 fs-4" data-bs-toggle="tooltip" data-bs-placement="top"
-          data-bs-custom-class="custom-tooltip"
-          data-bs-title="Add to favorites">
-            <i class="fa-regular fa-heart text-secondary me-1 fs-4"></i>
-          </button>
-        </form> --}}
       @endif
       {{ $product->likes->count() }}
     </div>

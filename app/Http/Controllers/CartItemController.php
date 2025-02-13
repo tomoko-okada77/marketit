@@ -46,12 +46,7 @@ class CartItemController extends Controller
         $transactions = [];
         
         foreach($cart_items as $item) {
-
-            // $this->transaction->buyer_id = Auth::user()->id;
-            // $this->transaction->product_id = $item->product_id;
-
             $product = $this->product->findOrFail($item->product_id);
-            // $this->transaction->seller_id = $product->user_id;
 
             $transactions[] = [
                 'buyer_id' => $item->user_id,
@@ -61,9 +56,6 @@ class CartItemController extends Controller
                 'updated_at' => now()
             ];
 
-            // $this->transaction->save();
-
-            // create notification
             $this->notification->user_id = $product->user_id;
             $this->notification->message = Auth::user()->name . ' bought your product.';
             $this->notification->link = route('profile.sales', $product->user_id);
@@ -71,9 +63,6 @@ class CartItemController extends Controller
             
         }
 
-        // print_r($transactions);
-
-        // $this->transaction->createMany($transactions);
         Transaction::insert($transactions);
         $this->cart_item->where('user_id', Auth::user()->id)->delete();
 
