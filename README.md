@@ -69,7 +69,9 @@ php artisan serve
 6. Access the application:Visit http://localhost:8000 in your browser.
 
 ## Screenshots
-
+![product list](./images/marketit-1.png)
+![product detail](./images/marketit-2.png)
+![mypage](./images/marketit-3.png)
 
 ## Future Improvements
 
