@@ -60,17 +60,27 @@ php artisan key:generate
 php artisan migrate
 ```
 
-5. Start the development server:
+5. Insert Categories
+```
+php artisan db:seed
+```
+
+6. Start the development server:
 
 ```
 php artisan serve
 ```
 
-6. Access the application:Visit http://localhost:8000 in your browser.
+7. Access the application:Visit http://127.0.0.1:8000/ in your browser.
 
 ## Screenshots
+- Product List
 ![product list](./public/images/marketit-1.png)
+
+- Product Detail
 ![product detail](./public/images/marketit-2.png)
+
+- Mypage
 ![mypage](./public/images/marketit-3.png)
 
 ## Future Improvements
